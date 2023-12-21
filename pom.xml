@@ -18,13 +18,13 @@
         <module>demo-freemaker</module>
         <module>demo-lock</module>
         <module>demo-annotation</module>
-        <module>dynamic-datasource</module>
         <module>demo-reflection</module>
         <module>demo-heartbeat</module>
         <module>demo-jdbc</module>
         <module>demo-quartz</module>
         <module>demo-test</module>
         <module>demo-httpClient</module>
+        <module>demo-mq</module>
     </modules>
     <properties>
         <java.version>8</java.version>
