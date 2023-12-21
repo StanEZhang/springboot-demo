@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    dynamic:
+      db1:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/db1?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+        username: root
+        password: root
+      db2:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://localhost:3306/db2?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+        username: root
+        password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml

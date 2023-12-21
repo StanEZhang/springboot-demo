@@ -1,0 +1,4 @@
+http:
+  port: 8484
+server:
+  port: 12345

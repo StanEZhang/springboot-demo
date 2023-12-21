@@ -1,0 +1,12 @@
+spring:
+  freemarker:
+    # \u6A21\u677F\u540E\u7F00\u540D
+    suffix: .ftl
+    # \u6587\u6863\u7C7B\u578B
+    content-type: text/html
+    # \u9875\u9762\u7F16\u7801
+    charset: UTF-8
+    # \u9875\u9762\u7F13\u5B58
+    cache: false
+    # \u6A21\u677F\u8DEF\u5F84
+    template-loader-path: classpath:/templates/
