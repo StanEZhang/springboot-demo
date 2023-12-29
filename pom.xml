@@ -25,6 +25,7 @@
         <module>demo-test</module>
         <module>demo-httpClient</module>
         <module>demo-mq</module>
+        <module>demo-dynamicProxy</module>
     </modules>
     <properties>
         <java.version>8</java.version>
