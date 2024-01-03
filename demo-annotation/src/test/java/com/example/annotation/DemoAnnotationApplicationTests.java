@@ -7,6 +7,7 @@ import com.example.annotation.bean.Person2;
 import com.example.annotation.pojo.BookStore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Arrays;
@@ -19,6 +20,20 @@ class DemoAnnotationApplicationTests {
     Person2 person2;
     @Autowired
     Human human;
+
+    // 读取bean属性
+    @Value("#{person.name}")
+    private String name;
+    // 读取bean属性
+    @Value("#{person.age}")
+    private String age;
+
+    @Test
+    void contextLoads0() {
+        System.out.println("常量注入获取name为：" + name);
+        System.out.println("常量注入获取age为：" + age);
+
+    }
 
     @Test
     void contextLoads() {

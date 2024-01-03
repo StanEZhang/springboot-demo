@@ -14,8 +14,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Data
 public class Person {
-    @Value("haibin")
+    @Value("bin")
     private String name;
-    @Value("${age}")
+    @Value("${age:18}")
     private Integer age;
 }
