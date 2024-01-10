@@ -5,9 +5,7 @@ import com.example.annotation.pojo.Circle;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 
 @SpringBootTest
 class AnnotationImportTests {
@@ -17,11 +15,12 @@ class AnnotationImportTests {
     @Test
     void contextLoads() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfig.class);
-        Circle circle = context.getBean(Circle.class);
-        circle.sayHi();
+        for (String name : context.getBeanDefinitionNames()) {
+            System.out.println(String.format("%s->%s", name, context.getBean(name)));
+        }
     }
     @Test
     void contextLoads2() {
-        circle.sayHi();
+        System.out.println(Circle.class.getName());
     }
 }

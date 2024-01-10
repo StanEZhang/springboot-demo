@@ -27,6 +27,8 @@
         <module>demo-mq</module>
         <module>demo-dynamicProxy</module>
         <module>demo-SpringAOP</module>
+        <module>demo-anno2</module>
+        <module>demo-anno3</module>
     </modules>
     <properties>
         <java.version>8</java.version>
